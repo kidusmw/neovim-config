@@ -4,3 +4,7 @@ function add(a: number, b: number): number {
 
 const result = add(1, 2)
 // const result = add("hello", 2)
+// TODO: 
+// FIXME:
+// HACK
+// NOTE

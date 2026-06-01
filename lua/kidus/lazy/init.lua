@@ -7,6 +7,11 @@ local plugins = {
   require("kidus.lazy.neotree"),
   require("kidus.lazy.lsp"),
   require("kidus.lazy.cmp"),
+  require("kidus.lazy.autopairs"),
+  require("kidus.lazy.gitsigns"),
+  require("kidus.lazy.lualine"),
+  require("kidus.lazy.bufferline"),
+  require("kidus.lazy.toggleterm"),
 }
 
 local opts = {}

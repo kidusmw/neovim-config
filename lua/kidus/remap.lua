@@ -5,6 +5,7 @@ vim.g.mapleader = " "
 --basics
 keymap("n", "<leader>w", ":w<CR>")
 keymap("n", "<leader>q", ":q<CR>")
+keymap("n", "<leader>u", ":u<CR>")
 
 -- move between splits
 keymap("n", "<C-h>", "<C-w>h")
@@ -22,9 +23,6 @@ keymap("v", "K", ":m '<-2<CR>gv=gv")
 
 -- paste without losing clipboard
 keymap("v", "p", '"_dP')
-
--- open terminal
-keymap("n", "<leader>t", ":term<CR>")
 
 -- escape terminal mode back to normal mode
 keymap("t", "<Esc>", "<C-\\><C-n>")

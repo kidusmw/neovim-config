@@ -3,7 +3,7 @@ return {
   config = function()
     require("toggleterm").setup({
       size = 15,
-      open_mapping = [[<C-\>]],   -- Ctrl+\ to toggle
+      open_mapping = [[<leader>t]],   -- Ctrl+\ to toggle
       direction = "horizontal",   -- "horizontal", "vertical", "float"
       shade_terminals = true,
     })

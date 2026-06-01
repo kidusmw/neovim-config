@@ -12,6 +12,7 @@ local plugins = {
   require("kidus.lazy.lualine"),
   require("kidus.lazy.bufferline"),
   require("kidus.lazy.toggleterm"),
+  require("kidus.lazy.whichkey"),
 }
 
 local opts = {}

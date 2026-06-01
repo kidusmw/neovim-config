@@ -13,7 +13,7 @@ return {
         ensure_installed = {
           "ts_ls",
           "gopls",
-          "rust_analyzer",
+           -- "rust_analyzer",
           "pyright",
           "html",
           "cssls",
@@ -33,7 +33,7 @@ return {
       vim.lsp.enable({
         "ts_ls",
         "gopls",
-        "rust_analyzer",
+        -- "rust_analyzer",
         "pyright",
         "html",
         "cssls",

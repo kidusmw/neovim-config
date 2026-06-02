@@ -1,6 +1,6 @@
 local keymap = vim.keymap.set
 vim.g.mapleader = " "
-
+vim.o.timeoutlen = 250
 -- basics
 keymap("n", "<leader>w", ":w<CR>", { desc = "Save file" })
 keymap("n", "<leader>q", ":q<CR>", { desc = "Quit" })

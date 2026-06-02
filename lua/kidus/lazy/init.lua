@@ -13,6 +13,7 @@ local plugins = {
   require("kidus.lazy.bufferline"),
   require("kidus.lazy.toggleterm"),
   require("kidus.lazy.whichkey"),
+  require("kidus.lazy.rainbow-delimiter"),
 }
 
 local opts = {}

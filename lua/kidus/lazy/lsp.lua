@@ -13,7 +13,7 @@ return {
         ensure_installed = {
           "ts_ls",
           "gopls",
-           -- "rust_analyzer",
+          -- "rust_analyzer",
           "pyright",
           "html",
           "cssls",
@@ -44,7 +44,7 @@ return {
         settings = {
           Lua = {
             diagnostics = {
-              globals = {"vim"},
+              globals = { "vim" },
             },
           },
         },
@@ -60,6 +60,17 @@ return {
           keymap("n", "<leader>ca", vim.lsp.buf.code_action, {})
           keymap("n", "<leader>rn", vim.lsp.buf.rename, {})
         end
+      })
+
+      -- CHANGED: This now targets ALL files instead of just "*.go"
+      vim.api.nvim_create_autocmd("BufWritePre", {
+        pattern = "*",
+        callback = function()
+          -- Use a protected call (pcall) so files without an active LSP do not throw errors
+          pcall(function()
+            vim.lsp.buf.format({ async = false })
+          end)
+        end,
       })
     end
   }

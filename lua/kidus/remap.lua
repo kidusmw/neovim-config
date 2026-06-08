@@ -6,6 +6,10 @@ keymap("n", "<leader>w", ":w<CR>", { desc = "Save file" })
 keymap("n", "<leader>q", ":q<CR>", { desc = "Quit" })
 keymap("n", "<leader>u", ":u<CR>", { desc = "Undo" })
 
+-- create splits
+keymap("n", "<C-s>", "<C-w>s", { desc = "Split screen horizontally" })
+keymap("n", "<C-v>", "<C-w>v", { desc = "Split screen vertically" })
+
 -- move between splits
 keymap("n", "<C-h>", "<C-w>h", { desc = "Move to left split" })
 keymap("n", "<C-l>", "<C-w>l", { desc = "Move to right split" })

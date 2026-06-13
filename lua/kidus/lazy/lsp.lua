@@ -30,6 +30,20 @@ return {
       -- new 0.11 native API
       vim.lsp.config("*", {})
 
+      vim.lsp.config("gopls", {
+        settings = {
+          gopls = {
+            analyses = {
+              unusedparams = true,
+              shadow = true,
+            },
+            staticcheck = true,
+            gofumpt = true,
+            semanticTokens = true,
+          }
+        }
+      })
+
       vim.lsp.enable({
         "ts_ls",
         "gopls",

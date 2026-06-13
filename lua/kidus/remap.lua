@@ -45,3 +45,11 @@ keymap("n", "[d", vim.diagnostic.goto_prev, { desc = "Prev diagnostic" })
 
 -- go to normal mode
 keymap("i", "jj", "<Esc>")
+
+-- change color scheme
+keymap("n", "<leader>cs", function()
+  require("telescope.builtin").colorscheme({
+    enable_preview = true,  -- Previews the theme live as you navigate
+    ignore_builtins = true, -- Hides default themes like 'desert', 'elflord', etc.
+  })
+end, { desc = "Fuzzy find colorschemes" })

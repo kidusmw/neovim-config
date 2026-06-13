@@ -15,6 +15,8 @@ opt.wrap = false
 opt.scrolloff = 8
 opt.signcolumn = "yes"
 opt.termguicolors = true
+vim.o.background = "dark"
+-- vim.cmd([[colorscheme gruvbox]])
 
 -- search
 -- opt.ignorecase = true

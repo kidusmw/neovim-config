@@ -1,11 +1,9 @@
 return {
-  "sainnhe/sonokai",
-  lazy = false,
-  priority = 1000,
+  "sainnhe/gruvbox-material",
   config = function()
-    vim.g.sonokai_style = "maia"
-    vim.g.sonokai_enable_italic = 1
-    vim.g.sonokai_better_performance = 1
-    vim.cmd("colorscheme sonokai")
+    -- Set the flavor to match morhetz exactly
+    vim.g.gruvbox_material_foreground = 'original'
+    vim.g.gruvbox_material_background = 'medium'
+    vim.cmd('colorscheme gruvbox-material')
   end
 }

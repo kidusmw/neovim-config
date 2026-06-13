@@ -3,7 +3,7 @@ return {
   config = function()
     require("toggleterm").setup({
       size = 15,
-      direction = "horizontal",   -- "horizontal", "vertical", "float"
+      direction = "horizontal", -- "horizontal", "vertical", "float"
       shade_terminals = true,
     })
 

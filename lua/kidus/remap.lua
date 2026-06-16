@@ -1,6 +1,7 @@
 local keymap = vim.keymap.set
 vim.g.mapleader = " "
 vim.o.timeoutlen = 250
+
 -- basics
 keymap("n", "<leader>w", ":w<CR>", { desc = "Save file" })
 keymap("n", "<leader>q", ":q<CR>", { desc = "Quit" })
@@ -11,10 +12,10 @@ keymap("n", "<C-s>", "<C-w>s", { desc = "Split screen horizontally" })
 keymap("n", "<C-v>", "<C-w>v", { desc = "Split screen vertically" })
 
 -- move between splits
-keymap("n", "<C-h>", "<C-w>h", { desc = "Move to left split" })
-keymap("n", "<C-l>", "<C-w>l", { desc = "Move to right split" })
-keymap("n", "<C-j>", "<C-w>j", { desc = "Move to bottom split" })
-keymap("n", "<C-k>", "<C-w>k", { desc = "Move to top split" })
+keymap("n", "<A-h>", "<C-w>h", { desc = "Move to left split" })
+keymap("n", "<A-l>", "<C-w>l", { desc = "Move to right split" })
+keymap("n", "<A-j>", "<C-w>j", { desc = "Move to bottom split" })
+keymap("n", "<A-k>", "<C-w>k", { desc = "Move to top split" })
 
 -- stay in indent mode when indenting in visual mode
 keymap("v", "<", "<gv", { desc = "Indent left" })
@@ -53,3 +54,7 @@ keymap("n", "<leader>cs", function()
     ignore_builtins = true, -- Hides default themes like 'desert', 'elflord', etc.
   })
 end, { desc = "Fuzzy find colorschemes" })
+
+-- Move half a page down/up
+keymap("n", "<A-d>", "<C-d>", { desc = "Scroll down half page" })
+keymap("n", "<A-u>", "<C-a>", { desc = "Scroll up half page" })

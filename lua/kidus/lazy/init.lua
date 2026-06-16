@@ -14,6 +14,7 @@ local plugins = {
   require("kidus.lazy.toggleterm"),
   require("kidus.lazy.whichkey"),
   require("kidus.lazy.rainbow-delimiter"),
+  require("kidus.lazy.vim-tmux-navigator"),
 }
 
 local opts = {}
